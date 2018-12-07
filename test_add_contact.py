@@ -24,7 +24,7 @@ class TestAddContact(unittest.TestCase):
         self.login(wd, username="admin", password="secret")
         self.create_contact(wd, firstname="", middlename="", lastname="", nickname="", title="", company="", address="",
                             home="", mobile="", work="", fax="", email="", email2="", email3="", homepage="", bday="",
-                            bmonth="", byear="", aday="", amonth="", ayear="", address2="", phone2="", notes="")
+                            bmonth="-", byear="", aday="", amonth="-", ayear="", address2="", phone2="", notes="")
         self.logout(wd)
 
     def logout(self, wd):
@@ -83,19 +83,15 @@ class TestAddContact(unittest.TestCase):
         wd.find_element_by_name("homepage").send_keys(homepage)
         wd.find_element_by_name("bday").click()
         Select(wd.find_element_by_name("bday")).select_by_visible_text(bday)
-        wd.find_element_by_xpath("//option[@value='18']").click()
         wd.find_element_by_name("bmonth").click()
         Select(wd.find_element_by_name("bmonth")).select_by_visible_text(bmonth)
-        wd.find_element_by_xpath("//option[@value='December']").click()
         wd.find_element_by_name("byear").click()
         wd.find_element_by_name("byear").clear()
         wd.find_element_by_name("byear").send_keys(byear)
         wd.find_element_by_name("aday").click()
         Select(wd.find_element_by_name("aday")).select_by_visible_text(aday)
-        wd.find_element_by_xpath("(//option[@value='18'])[2]").click()
         wd.find_element_by_name("amonth").click()
         Select(wd.find_element_by_name("amonth")).select_by_visible_text(amonth)
-        wd.find_element_by_xpath("(//option[@value='December'])[2]").click()
         wd.find_element_by_name("ayear").click()
         wd.find_element_by_name("ayear").clear()
         wd.find_element_by_name("ayear").send_keys(ayear)

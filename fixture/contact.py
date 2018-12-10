@@ -1,37 +1,12 @@
-# -*- coding: utf-8 -*-
-from selenium import webdriver
 from selenium.webdriver.support.ui import Select
-import unittest
-from contact import Contact
 
-class TestAddContact(unittest.TestCase):
-    def setUp(self):
-        self.wd = webdriver.Firefox()
-        self.wd.implicitly_wait(30)
+class ContactHelper:
 
-    def test_add_contact(self):
-        wd = self.wd
-        self.open_home_page(wd)
-        self.login(wd, username="admin", password="secret")
-        self.create_contact(wd, Contact(firstname="zz", middlename="xx", lastname="cc", nickname="vv", title="bb", company="nn",
-                            address="mm", home="aa", mobile="ss", work="dd", fax="ff", email="gg", email2="hh", email3="jj",
-                            homepage="kk", bday="18", bmonth="December", byear="1980", aday="18", amonth="December",
-                            ayear="1990", address2="qwe", phone2="df", notes="gg"))
-        self.logout(wd)
+    def __init__(self, app):
+        self.app = app
 
-    def test_add_empty_contact(self):
-        wd = self.wd
-        self.open_home_page(wd)
-        self.login(wd, username="admin", password="secret")
-        self.create_contact(wd, Contact(firstname="", middlename="", lastname="", nickname="", title="", company="", address="",
-                            home="", mobile="", work="", fax="", email="", email2="", email3="", homepage="", bday="",
-                            bmonth="-", byear="", aday="", amonth="-", ayear="", address2="", phone2="", notes=""))
-        self.logout(wd)
-
-    def logout(self, wd):
-        wd.find_element_by_link_text("Logout").click()
-
-    def create_contact(self, wd, contact):
+    def create_contact(self, contact):
+        wd = self.app.wd
         # init contact creation
         wd.find_element_by_link_text("add new").click()
         # fill contact form
@@ -105,19 +80,3 @@ class TestAddContact(unittest.TestCase):
         wd.find_element_by_name("notes").send_keys(contact.notes)
         # submit contact creation
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
-
-    def login(self, wd, username, password):
-        wd.find_element_by_name("user").clear()
-        wd.find_element_by_name("user").send_keys(username)
-        wd.find_element_by_name("pass").clear()
-        wd.find_element_by_name("pass").send_keys(password)
-        wd.find_element_by_xpath("//input[@value='Login']").click()
-
-    def open_home_page(self, wd):
-        wd.get("http://localhost/addressbook/")
-
-    def tearDown(self):
-        self.wd.quit()
-
-if __name__ == "__main__":
-    unittest.main()

@@ -14,7 +14,7 @@ class ContactHelper:
         self.fill_contact_form(contact)
         # submit contact creation
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
-        wd.find_element_by_link_text("home page").click()
+        self.open_home_page()
 
     def delete_first_contact(self):
         wd = self.app.wd
@@ -38,7 +38,7 @@ class ContactHelper:
         # submit modification
         wd.find_element_by_name("update").click()
         # return to home page
-        wd.find_element_by_link_text("home page").click()
+        self.open_home_page()
 
     def fill_contact_form(self, contact):
         wd = self.app.wd
@@ -70,6 +70,10 @@ class ContactHelper:
         self.change_field_value("phone2", contact.phone2)
         self.change_field_value("notes", contact.notes)
 
+    def open_home_page(self):
+        wd = self.app.wd
+        wd.find_element_by_link_text("home").click()
+
     def change_dropdown_value(self, dropdown_name, value):
         wd = self.app.wd
         if value is not None:
@@ -85,5 +89,5 @@ class ContactHelper:
 
     def count(self):
         wd = self.app.wd
+        self.open_home_page()
         return len(wd.find_elements_by_name("selected[]"))
-

@@ -18,6 +18,7 @@ class ContactHelper:
 
     def delete_first_contact(self):
         wd = self.app.wd
+        self.open_home_page()
         self.select_first_contact()
         # submit deletion
         wd.find_element_by_xpath("//input[@value='Delete']").click()
@@ -31,6 +32,7 @@ class ContactHelper:
 
     def modify_first_contact(self, new_contact_data):
         wd = self.app.wd
+        self.open_home_page()
         self.select_first_contact()
         # open modification form
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
@@ -38,7 +40,6 @@ class ContactHelper:
         self.fill_contact_form(new_contact_data)
         # submit modification
         wd.find_element_by_name("update").click()
-        # return to home page
         self.open_home_page()
 
     def fill_contact_form(self, contact):
@@ -73,7 +74,8 @@ class ContactHelper:
 
     def open_home_page(self):
         wd = self.app.wd
-        wd.find_element_by_link_text("home").click()
+        if not (wd.current_url.endswith("/addressbook/")):
+            wd.find_element_by_link_text("home").click()
 
     def change_dropdown_value(self, dropdown_name, value):
         wd = self.app.wd

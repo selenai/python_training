@@ -26,10 +26,6 @@ class ContactHelper:
         wd.switch_to_alert().accept()
         self.open_home_page()
 
-    def select_first_contact(self):
-        wd = self.app.wd
-        wd.find_element_by_name("selected[]").click()
-
     def modify_first_contact(self, new_contact_data):
         wd = self.app.wd
         self.open_home_page()
@@ -71,6 +67,10 @@ class ContactHelper:
         self.change_field_value("address2", contact.address2)
         self.change_field_value("phone2", contact.phone2)
         self.change_field_value("notes", contact.notes)
+
+    def select_first_contact(self):
+        wd = self.app.wd
+        wd.find_element_by_name("selected[]").click()
 
     def open_home_page(self):
         wd = self.app.wd

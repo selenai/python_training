@@ -47,13 +47,24 @@ class ContactHelper:
         self.open_home_page()
         self.select_contact_by_index(index)
         # open modification form
-        wd.find_element_by_xpath("//img[@alt='Edit']").click()
+        wd.find_elements_by_css_selector('img[alt="Edit"]')[index].click()
         # fill contact form
         self.fill_contact_form(new_contact_data)
         # submit modification
         wd.find_element_by_name("update").click()
         self.open_home_page()
         self.contact_cache = None
+
+
+    def modify_contact(self, contact, index):
+            wd = self.app.wd
+            self.return_to_contacts_page()
+            self.select_contact(index)
+            self.open_edit_page_by_index(index)
+            self.fill_contact(contact)
+            wd.find_element_by_name("update").click()
+            self.contacts_cash = None
+
 
     def fill_contact_form(self, contact):
         wd = self.app.wd
@@ -121,4 +132,3 @@ class ContactHelper:
                 firstname = element.find_element_by_xpath(".//td[3]").text
                 self.contact_cache.append(Contact(lastname=lastname, firstname=firstname, id=id))
         return list(self.contact_cache)
-

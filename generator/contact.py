@@ -1,4 +1,4 @@
-from model.group import Group
+from model.contact import Contact
 import random
 import string
 import os.path
@@ -14,7 +14,7 @@ except getopt.GetoptError as err:
     sys.exit(2)
 
 n = 5
-f = "data/groups.json"
+f = "data/contacts.json"
 
 for o, a in opts:
     if o == "-n":
@@ -28,10 +28,14 @@ def random_string(prefix, maxlen):
     return prefix + "".join([random.choice(symbols) for i in range(random.randrange(maxlen))])
 
 
-testdata = [Group(name="", header="", footer="")] + [
-    Group(name=random_string("name", 10), header=random_string("header", 20), footer=random_string("footer", 20))
+testdata = [Contact(firstname="", lastname="", address="", home="", mobile="", work="", email="", email2="", email3="",
+                 phone2="")] + [
+    Contact(firstname=random_string("firstname", 20), lastname=random_string("lastname", 20),
+            address=random_string("address", 20), home=random_string("home", 20), mobile=random_string("mobile", 20),
+            work=random_string("work", 20), email=random_string("email", 20), email2=random_string("email2", 20),
+            email3=random_string("email3", 20), phone2=random_string("phone2", 20))
     for i in range(n)
-]
+    ]
 
 file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", f)
 

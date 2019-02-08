@@ -199,12 +199,11 @@ class ContactHelper:
         self.open_home_page()
         self.contact_cache = None
 
-#    def add_to_group_by_id(self, contact_id, group_id):
-#        wd: WebElement = self.app.wd
-#        self.open_contacts_page()
-#        self.mark_contact_by_id(contact_id)
-#        wd.find_element_by_xpath("//select[@name='to_group']/option[@value='%s']" % group_id).click()
-#        wd.find_element_by_xpath("//input[@name='add']").click()
-#        wd.find_element_by_xpath("//i/a").click()
-#        self.contact_cache = None
+    def delete_contact_from_group(self, contact_id, group_id):
+        wd = self.app.wd
+        self.open_home_page()
+        wd.find_element_by_xpath("//select[@name='group']//option[@value='%s']" % group_id).click()
+        self.select_contact_by_id(contact_id)
+        wd.find_element_by_name("remove").click()
+        self.open_home_page()
 

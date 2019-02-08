@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f87fd93-0d9d-4e09-8b27-c6360dcbc6bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/test_contacts.py" afterDir="false" />
+    <list default="true" id="1f87fd93-0d9d-4e09-8b27-c6360dcbc6bc" name="Default Changelist" comment="21. Изменено: тест для сравнения контактов: быза vs UI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/check_db_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_db_connection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/contacts.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/contacts.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_phones.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/orm.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/orm.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,65 +17,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/test_contacts.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/contact.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixture/orm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
-              <folding>
-                <element signature="e#1#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/PycharmProjects/training/geometry.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test_db_matches_ui.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/check_db_connection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+            <state relative-caret-position="119">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,43 +33,61 @@
         <entry file="file://$PROJECT_DIR$/test/test_add_contact.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="53" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="53" />
+              <caret line="10" column="17" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="10" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixture/db.py">
+        <entry file="file://$PROJECT_DIR$/test/test_contacts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="96" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="96" />
+            <state relative-caret-position="119">
+              <caret line="8" column="75" lean-forward="true" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
               <folding>
-                <element signature="e#0#22#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test_del_contact.py">
+        <entry file="file://$PROJECT_DIR$/test/test_db_matches_ui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="33" />
+            <state relative-caret-position="102">
+              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
               <folding>
-                <element signature="e#24#57#0" expanded="true" />
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixture/contact.py">
+        <entry file="file://$PROJECT_DIR$/test/test_del_group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="148" column="8" selection-start-line="148" selection-start-column="8" selection-end-line="148" selection-end-column="8" />
+            <state relative-caret-position="153">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
               <folding>
-                <element signature="e#0#48#0" expanded="true" />
+                <element signature="e#24#53#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/add_contact_to_group.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/contact.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -137,6 +105,9 @@
     <findStrings>
       <find />
       <find>pytest_generate_tests</find>
+      <find>db</find>
+      <find>s</find>
+      <find>if</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -156,7 +127,6 @@
         <option value="$PROJECT_DIR$/test/test_edit_contact.py" />
         <option value="$PROJECT_DIR$/quadratic.py" />
         <option value="$PROJECT_DIR$/test/test_edit_group.py" />
-        <option value="$USER_HOME$/PycharmProjects/training/hello.py" />
         <option value="$USER_HOME$/PycharmProjects/training/geom2d/point.py" />
         <option value="$PROJECT_DIR$/fixture/session.py" />
         <option value="$PROJECT_DIR$/model/contact.py" />
@@ -171,20 +141,23 @@
         <option value="$PROJECT_DIR$/target.json" />
         <option value="$PROJECT_DIR$/data/groups.json" />
         <option value="$PROJECT_DIR$/test/test_db_matches_ui.py" />
-        <option value="$PROJECT_DIR$/conftest.py" />
         <option value="$PROJECT_DIR$/test/test_del_group.py" />
         <option value="$PROJECT_DIR$/test/test_add_group.py" />
         <option value="$PROJECT_DIR$/test/test_add_contact.py" />
-        <option value="$PROJECT_DIR$/fixture/db.py" />
         <option value="$PROJECT_DIR$/fixture/group.py" />
         <option value="$PROJECT_DIR$/test/test_modify_group.py" />
         <option value="$PROJECT_DIR$/test/test_modify_contact.py" />
         <option value="$PROJECT_DIR$/test/test_del_contact.py" />
-        <option value="$PROJECT_DIR$/fixture/orm.py" />
-        <option value="$PROJECT_DIR$/fixture/contact.py" />
-        <option value="$PROJECT_DIR$/check_db_connection.py" />
         <option value="$USER_HOME$/PycharmProjects/training/geometry.py" />
         <option value="$PROJECT_DIR$/test/test_phones.py" />
+        <option value="$USER_HOME$/PycharmProjects/training/hello.py" />
+        <option value="$PROJECT_DIR$/test/test_contacts.py" />
+        <option value="$PROJECT_DIR$/fixture/orm.py" />
+        <option value="$PROJECT_DIR$/fixture/db.py" />
+        <option value="$PROJECT_DIR$/check_db_connection.py" />
+        <option value="$PROJECT_DIR$/conftest.py" />
+        <option value="$PROJECT_DIR$/fixture/contact.py" />
+        <option value="$PROJECT_DIR$/test/add_contact_to_group.py" />
       </list>
     </option>
   </component>
@@ -202,7 +175,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,6 +215,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -268,7 +241,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_contacts.py">
+  <component name="RunManager" selected="Python tests.pytest in add_contact_to_group.py">
     <configuration name="check_db_connection" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -290,28 +263,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="contact" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python_training" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/generator" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generator/contact.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="geometry" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="hello" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -323,7 +275,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/training/geometry.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/training/hello.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -362,6 +314,21 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in add_contact_to_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="python_training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;-v&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/add_contact_to_group.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in test_add_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -393,20 +360,20 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.hello" />
       <item itemvalue="Python.check_db_connection" />
-      <item itemvalue="Python.geometry" />
       <item itemvalue="Python tests.pytest in C:/Alena/SoftwareTesting_Trainings/Python/python_training/test_add_group.py" />
       <item itemvalue="Python tests.pytest in test_contacts.py" />
       <item itemvalue="Python tests.pytest in test_add_contact.py" />
-      <item itemvalue="Python.contact" />
+      <item itemvalue="Python tests.pytest in add_contact_to_group.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in add_contact_to_group.py" />
+        <item itemvalue="Python.check_db_connection" />
+        <item itemvalue="Python.hello" />
         <item itemvalue="Python tests.pytest in test_contacts.py" />
         <item itemvalue="Python tests.pytest in test_add_contact.py" />
-        <item itemvalue="Python.contact" />
-        <item itemvalue="Python.geometry" />
-        <item itemvalue="Python.check_db_connection" />
       </list>
     </recent_temporary>
   </component>
@@ -420,13 +387,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544132742735</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Создание теста: Добавление контакта">
-      <created>1544216838015</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1544216838015</updated>
     </task>
     <task id="LOCAL-00011" summary="Создан workspace.xml">
       <created>1544216938035</created>
@@ -764,51 +724,59 @@
       <option name="project" value="LOCAL" />
       <updated>1549142149503</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="21. Изменено: тест для сравнения контактов: быза vs UI">
+      <created>1549318890175</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1549318890175</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test_phones_py - 2019.02.04 at 22h 53m 54s.xml">
-      <configuration name="pytest in test_phones.py" configurationId="tests" />
+    <history-entry file="pytest_in_add_contact_to_group_py - 2019.02.08 at 18h 25m 50s.xml">
+      <configuration name="pytest in add_contact_to_group.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_phones_py - 2019.02.04 at 22h 54m 25s.xml">
-      <configuration name="pytest in test_phones.py" configurationId="tests" />
+    <history-entry file="pytest_in_add_contact_to_group_py - 2019.02.08 at 18h 32m 17s.xml">
+      <configuration name="pytest in add_contact_to_group.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_add_contact_py - 2019.02.04 at 22h 56m 39s.xml">
-      <configuration name="pytest in test_add_contact.py" configurationId="tests" />
+    <history-entry file="pytest_in_add_contact_to_group_py - 2019.02.08 at 18h 49m 30s.xml">
+      <configuration name="pytest in add_contact_to_group.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_add_contact_py - 2019.02.04 at 22h 58m 01s.xml">
-      <configuration name="pytest in test_add_contact.py" configurationId="tests" />
+    <history-entry file="pytest_in_add_contact_to_group_py - 2019.02.08 at 18h 52m 01s.xml">
+      <configuration name="pytest in add_contact_to_group.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_add_contact_py - 2019.02.04 at 22h 59m 35s.xml">
-      <configuration name="pytest in test_add_contact.py" configurationId="tests" />
+    <history-entry file="pytest_in_add_contact_to_group_py - 2019.02.08 at 18h 52m 53s.xml">
+      <configuration name="pytest in add_contact_to_group.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_phones_py - 2019.02.04 at 23h 00m 59s.xml">
-      <configuration name="pytest in test_phones.py" configurationId="tests" />
+    <history-entry file="pytest_in_add_contact_to_group_py - 2019.02.08 at 19h 07m 45s.xml">
+      <configuration name="pytest in add_contact_to_group.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_phones_py - 2019.02.04 at 23h 09m 56s.xml">
-      <configuration name="pytest in test_phones.py" configurationId="tests" />
+    <history-entry file="pytest_in_add_contact_to_group_py - 2019.02.08 at 19h 08m 07s.xml">
+      <configuration name="pytest in add_contact_to_group.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_phones_py - 2019.02.04 at 23h 11m 04s.xml">
-      <configuration name="pytest in test_phones.py" configurationId="tests" />
+    <history-entry file="pytest_in_add_contact_to_group_py - 2019.02.08 at 19h 11m 31s.xml">
+      <configuration name="pytest in add_contact_to_group.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_add_contact_py - 2019.02.04 at 23h 12m 09s.xml">
-      <configuration name="pytest in test_add_contact.py" configurationId="tests" />
+    <history-entry file="pytest_in_add_contact_to_group_py - 2019.02.08 at 19h 12m 12s.xml">
+      <configuration name="pytest in add_contact_to_group.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_phones_py - 2019.02.04 at 23h 12m 48s.xml">
-      <configuration name="pytest in test_phones.py" configurationId="tests" />
+    <history-entry file="pytest_in_add_contact_to_group_py - 2019.02.08 at 19h 13m 23s.xml">
+      <configuration name="pytest in add_contact_to_group.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21726191" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21726191" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.6666667" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49925596" visible="true" weight="0.3768116" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5072464" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49925596" visible="true" weight="0.24637681" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.547504" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -826,22 +794,21 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.6666667" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34460548" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4057971" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49925596" visible="true" weight="0.33816424" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5072464" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Python Console" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32843137" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50074404" side_tool="true" weight="0.3510467" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавлено полноценное сравнение списков групп (удаление группы)" />
     <MESSAGE value="Добавлено поэлементное сравнение 2-х списков групп (добавление группы)" />
     <MESSAGE value="Добавлено поэлементное сравнение 2-х списков групп (модификация группы)" />
     <MESSAGE value="Добавлено сравнение списков контактов до и после добавления/модификации/удаления группы" />
@@ -866,7 +833,15 @@
     <MESSAGE value="Добавлена загрузка информации из базы данных в виде объектов" />
     <MESSAGE value=" Изменено: проверки в тестах через БД для создания и удаления групп и контактов" />
     <MESSAGE value="20. Добавлено: проверки в тестах через БД для редактирования групп и контактов" />
-    <option name="LAST_COMMIT_MESSAGE" value="20. Добавлено: проверки в тестах через БД для редактирования групп и контактов" />
+    <MESSAGE value="21. Изменено: тест для сравнения контактов: быза vs UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="21. Изменено: тест для сравнения контактов: быза vs UI" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="tests">
+        <watch expression="group_id" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -887,13 +862,6 @@
     <entry file="file://$PROJECT_DIR$/application.py" />
     <entry file="file://$USER_HOME$/PycharmProjects/training/percents.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/training/hello.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/PycharmProjects/training/quadratic.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -967,16 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conftest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_modify_group.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1021,26 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_del_group.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#24#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="96" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="96" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/generator/group.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1062,47 +1000,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_add_group.py">
+    <entry file="file://$USER_HOME$/PycharmProjects/training/hello.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_del_contact.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="33" />
-          <folding>
-            <element signature="e#24#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/check_db_connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_db_matches_ui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/contact.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="148" column="8" selection-start-line="148" selection-start-column="8" selection-end-line="148" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -1113,12 +1014,113 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_add_group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="753" column="2" selection-start-line="753" selection-start-column="2" selection-end-line="753" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fixture/orm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="765">
+          <caret line="51" column="87" selection-start-line="51" selection-start-column="85" selection-end-line="51" selection-end-column="87" />
           <folding>
             <element signature="e#1#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conftest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-986">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_del_contact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="66" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="66" />
+          <folding>
+            <element signature="e#24#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/contact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_db_matches_ui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check_db_connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_del_group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <element signature="e#24#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/contact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="196" selection-start-line="196" selection-end-line="196" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_contacts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="75" lean-forward="true" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1126,24 +1128,14 @@
     <entry file="file://$PROJECT_DIR$/test/test_add_contact.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="53" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="53" />
+          <caret line="10" column="17" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/contact.py">
+    <entry file="file://$PROJECT_DIR$/test/add_contact_to_group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_contacts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="196">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
         </state>
       </provider>
     </entry>

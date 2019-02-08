@@ -189,3 +189,22 @@ class ContactHelper:
         work = re.search("W: (.*)", text).group(1)
         phone2 = re.search("P: (.*)", text).group(1)
         return Contact(home=home, mobile=mobile, work=work,phone2=phone2)
+
+    def add_contact_to_group(self, contact_id, group_id):
+        wd = self.app.wd
+        self.open_home_page()
+        self.select_contact_by_id(contact_id)
+        wd.find_element_by_xpath("//select[@name='to_group']/option[@value='%s']" % group_id).click()
+        wd.find_element_by_xpath("//input[@name='add']").click()
+        self.open_home_page()
+        self.contact_cache = None
+
+#    def add_to_group_by_id(self, contact_id, group_id):
+#        wd: WebElement = self.app.wd
+#        self.open_contacts_page()
+#        self.mark_contact_by_id(contact_id)
+#        wd.find_element_by_xpath("//select[@name='to_group']/option[@value='%s']" % group_id).click()
+#        wd.find_element_by_xpath("//input[@name='add']").click()
+#        wd.find_element_by_xpath("//i/a").click()
+#        self.contact_cache = None
+

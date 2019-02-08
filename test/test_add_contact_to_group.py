@@ -21,8 +21,7 @@ def test_add_contact_to_group(app):
     if len(old_contacts_in_group) > 0:
         for c in old_contacts_in_group:
             if c.id == contact.id:
-                contact_exists_in_group = True
-            break
+                break
     else:
         contact_exists_in_group == False
         app.contact.add_contact_to_group(contact.id, group.id)

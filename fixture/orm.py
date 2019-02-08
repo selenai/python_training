@@ -33,14 +33,14 @@ class ORMFixture:
         self.db.generate_mapping()
         sql_debug(True)
 
-    def convert_groups_to_model(self, groups):
+    def convert_group_to_model(self, groups):
         def convert(group):
             return Group(id=str(group.id), name=group.name, header=group.header, footer=group.footer)
         return list(map(convert, groups))
 
     @db_session
     def get_group_list(self):
-        return self.convert_groups_to_model(select(g for g in ORMFixture.ORMGroup))
+        return self.convert_group_to_model(select(g for g in ORMFixture.ORMGroup))
 
     def convert_contact_to_model(self, contacts):
         def convert(contact):
@@ -61,3 +61,8 @@ class ORMFixture:
         orm_group = list(select(g for g in ORMFixture.ORMGroup if g.id == group.id))[0]
         return self.convert_contact_to_model(select(c for c in ORMFixture.ORMContact if c.deprecated is None and
                                                     orm_group not in c.groups))
+
+    @db_session
+    def get_groups_without_contact(self, contact):
+        orm_contact = list(select(c for c in ORMFixture.ORMContact if c.id == contact.id))[0]
+        return self.convert_group_to_model(select(g for g in ORMFixture.ORMGroup if orm_contact not in g.contacts))

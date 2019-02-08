@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1f87fd93-0d9d-4e09-8b27-c6360dcbc6bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/add_contact_to_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact_to_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check_db_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_db_connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/orm.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/orm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_contact_to_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact_to_group.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +15,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/check_db_connection.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="103">
+              <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fixture/contact.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -38,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/test_add_contact_to_group.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#1#30#0" expanded="true" />
               </folding>
@@ -50,13 +63,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test_delete_contact_from_group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="171">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fixture/orm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="65" column="34" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="34" />
+              <folding>
+                <element signature="e#1#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,13 +147,14 @@
         <option value="$PROJECT_DIR$/test/test_phones.py" />
         <option value="$USER_HOME$/PycharmProjects/training/hello.py" />
         <option value="$PROJECT_DIR$/test/test_contacts.py" />
-        <option value="$PROJECT_DIR$/fixture/orm.py" />
         <option value="$PROJECT_DIR$/fixture/db.py" />
-        <option value="$PROJECT_DIR$/check_db_connection.py" />
         <option value="$PROJECT_DIR$/conftest.py" />
         <option value="$PROJECT_DIR$/test/add_contact_to_group.py" />
         <option value="$PROJECT_DIR$/fixture/contact.py" />
         <option value="$PROJECT_DIR$/test/test_delete_contact_from_group.py" />
+        <option value="$PROJECT_DIR$/fixture/orm.py" />
+        <option value="$PROJECT_DIR$/check_db_connection.py" />
+        <option value="$PROJECT_DIR$/test/test_add_contact_to_group.py" />
       </list>
     </option>
   </component>
@@ -212,7 +238,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_delete_contact_from_group.py">
+  <component name="RunManager">
     <configuration name="check_db_connection" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -340,9 +366,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test_delete_contact_from_group.py" />
         <item itemvalue="Python tests.pytest in test_add_contact_to_group.py" />
         <item itemvalue="Python.check_db_connection" />
+        <item itemvalue="Python tests.pytest in test_delete_contact_from_group.py" />
         <item itemvalue="Python.hello" />
         <item itemvalue="Python tests.pytest in test_contacts.py" />
       </list>
@@ -358,20 +384,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544132742735</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Добавлено действие: нажатие на Add new кнопку">
-      <created>1544217345591</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1544217345591</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Рефакторинг test_add_contact: экстракт параметров">
-      <created>1544223972479</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1544223972479</updated>
     </task>
     <task id="LOCAL-00014" summary="Рефакторинг test_add_contact: экстракт параметров (отредактировано)">
       <created>1544225967141</created>
@@ -702,22 +714,24 @@
       <option name="project" value="LOCAL" />
       <updated>1549649899550</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="22. Добавлен тест test_del_contact_from_group">
+      <created>1549651491013</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1549651491013</updated>
+    </task>
+    <task id="LOCAL-00062" summary="22. Изменен тест test_add_contact_to_group">
+      <created>1549656891234</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1549656891234</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_add_contact_to_group_py - 2019.02.08 at 19h 08m 07s.xml">
-      <configuration name="pytest in add_contact_to_group.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_add_contact_to_group_py - 2019.02.08 at 19h 11m 31s.xml">
-      <configuration name="pytest in add_contact_to_group.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_add_contact_to_group_py - 2019.02.08 at 19h 12m 12s.xml">
-      <configuration name="pytest in add_contact_to_group.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_add_contact_to_group_py - 2019.02.08 at 19h 13m 23s.xml">
-      <configuration name="pytest in add_contact_to_group.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_in_test_delete_contact_from_group_py - 2019.02.08 at 19h 31m 44s.xml">
       <configuration name="pytest in test_delete_contact_from_group.py" configurationId="tests" />
     </history-entry>
@@ -736,6 +750,18 @@
     <history-entry file="pytest_in_test_add_contact_to_group_py - 2019.02.08 at 19h 41m 43s.xml">
       <configuration name="pytest in test_add_contact_to_group.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_in_test_delete_contact_from_group_py - 2019.02.08 at 19h 41m 59s.xml">
+      <configuration name="pytest in test_delete_contact_from_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_delete_contact_from_group_py - 2019.02.08 at 19h 43m 10s.xml">
+      <configuration name="pytest in test_delete_contact_from_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_add_contact_to_group_py - 2019.02.08 at 21h 13m 20s.xml">
+      <configuration name="pytest in test_add_contact_to_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_add_contact_to_group_py - 2019.02.08 at 21h 13m 41s.xml">
+      <configuration name="pytest in test_add_contact_to_group.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -746,8 +772,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.6666667" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49925596" visible="true" weight="0.3236715" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.26409018" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49925596" visible="true" weight="0.080515295" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36876008" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -780,8 +806,6 @@
     </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавлено поэлементное сравнение 2-х списков групп (модификация группы)" />
-    <MESSAGE value="Добавлено сравнение списков контактов до и после добавления/модификации/удаления группы" />
     <MESSAGE value="Добавлено поэлементное сравнение 2-х списков контактов (удаление контакта)" />
     <MESSAGE value="Добавлено поэлементное сравнение 2-х списков контактов (добавление контакта)" />
     <MESSAGE value="Добавлено поэлементное сравнение 2-х списков контактов (модификация контакта)" />
@@ -805,7 +829,9 @@
     <MESSAGE value="20. Добавлено: проверки в тестах через БД для редактирования групп и контактов" />
     <MESSAGE value="21. Изменено: тест для сравнения контактов: быза vs UI" />
     <MESSAGE value="22. Добавлен тест test_add_contact_to_group" />
-    <option name="LAST_COMMIT_MESSAGE" value="22. Добавлен тест test_add_contact_to_group" />
+    <MESSAGE value="22. Добавлен тест test_del_contact_from_group" />
+    <MESSAGE value="22. Изменен тест test_add_contact_to_group" />
+    <option name="LAST_COMMIT_MESSAGE" value="22. Изменен тест test_add_contact_to_group" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -1002,16 +1028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/orm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="87" selection-start-line="51" selection-start-column="85" selection-end-line="51" selection-end-column="87" />
-          <folding>
-            <element signature="e#1#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conftest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-986">
@@ -1069,16 +1085,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/check_db_connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/contact.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -1096,22 +1102,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_add_contact_to_group.py">
+    <entry file="file://$PROJECT_DIR$/test/test_delete_contact_from_group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+        <state relative-caret-position="171">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
-            <element signature="e#1#30#0" expanded="true" />
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_delete_contact_from_group.py">
+    <entry file="file://$PROJECT_DIR$/check_db_connection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="103">
+          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/orm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="65" column="34" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="34" />
+          <folding>
+            <element signature="e#1#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_add_contact_to_group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#1#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
